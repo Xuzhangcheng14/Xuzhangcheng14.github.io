@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blog
+title: 徐神之家
 pagination:
   enabled: true
   collection: posts
@@ -15,17 +15,12 @@ pagination:
 
 <div class="post">
 
-  {% assign blog_name_size = site.blog_name | size %}
-  {% assign blog_description_size = site.blog_description | size %}
+ <div class="header-bar">
+  <h1>大家好</h1>      <!-- 把你的网站标题写在这里 -->
+  <h2>别逼老年人用电脑了</h2>   <!-- 把你的网站描述写在这里 -->
+</div>
 
-  {% if blog_name_size > 0 or blog_description_size > 0 %}
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
-  </div>
-  {% endif %}
-
-  {% if site.display_tags or site.display_categories %}
+  {% if false %} 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
