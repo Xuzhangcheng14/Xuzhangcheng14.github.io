@@ -1,1 +1,57 @@
 
+/* 修改整个网站的字体和背景色 */
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif; /* 使用更优雅的中文字体 */
+    background-color: #f8f9fa; /* 浅灰色背景，更柔和 */
+    color: #333; /* 将文字颜色从纯黑改为深灰，减少对比度 */
+    line-height: 1.6; /* 增加行高，让文字更易读 */
+}
+
+/* 修改所有链接的颜色 */
+a {
+    color: #007bff; /* 链接蓝色 */
+    text-decoration: none; /* 取消下划线 */
+}
+
+a:hover {
+    color: #0056b3; /* 鼠标悬停时更深的蓝色 */
+    text-decoration: underline; /* 悬停时显示下划线 */
+  }
+/* 导航栏样式 */
+.navbar, .header, .site-header { /* 尝试这些选择器 */
+    background-color: #ffffff !important; /* 白色背景 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important; /* 添加底部阴影，有悬浮感 */
+}
+
+/* 导航栏链接 */
+.navbar a, .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+}
+/* 给文章卡片、项目卡片等添加美化 */
+.card, .post-list li, .project-card {
+    background: #ffffff;
+    border-radius: 8px !important; /* 圆角 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important; /* 轻柔阴影 */
+    border: 1px solid #eee !important;
+    transition: all 0.3s ease; /* 添加过渡动画 */
+}
+
+/* 鼠标悬停时卡片效果 */
+.card:hover, .post-list li:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    transform: translateY(-2px); /* 轻微上浮效果 */
+}
+/* 代码高亮样式 */
+.highlight, pre, code {
+    border-radius: 6px !important;
+    background-color: #f6f8fa !important;
+    border: 1px solid #e1e4e8 !important;
+}
+/* 给网站上的图片统一添加样式 */
+img {
+    border-radius: 4px; /* 轻微圆角 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 轻柔阴影 */
+    max-width: 100%;
+    height: auto;
+}
